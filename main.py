@@ -13,10 +13,11 @@ with open('model/scaler.pkl', 'rb') as f:
 
 pts = float(input("Enter the player's points per game: "))
 fp = float(input("Enter the player's fantasy points per game: "))
-fta = float(input("Enter the player's attempted free throws per game: "))
+fga = float(input("Enter the player's attempted field goals per game: "))
+ftm = float(input("Enter the player's made free throws per game: "))
 minutes = float(input("Enter the player's minutes per game: "))
 
-x = np.array([[pts, fp, fta, minutes]])
+x = np.array([[pts, fp, fga, ftm, minutes]])
 scaled_x = scaler.transform(x)
 
 prediction = model.predict(scaled_x)[0]
