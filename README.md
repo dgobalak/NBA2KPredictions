@@ -64,10 +64,10 @@
 
 ### Built With
 
-* [Python]
-* [Flask]
-* [Scikit-Learn]
-* [HTML]
+* Python
+* Flask
+* Scikit-Learn
+* HTML
 
 <!-- GETTING STARTED -->
 ## Getting Started
